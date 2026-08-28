@@ -79,6 +79,42 @@
   - 通过分析日志，我们可以发现言心管控的运行日志中包含了应用商店的发包内容以及回应内容
   - 我们可以通过发包来获取最新应用列表
   - (*以下省略发包部分，具体应用可选用reqable*)
+  - 返回内容如下：
+    ```json
+    {
+      "code": 1,
+      "message": "",
+      "data": [
+        {
+          "appId": "be82c41d-a05e-4fd8-88e6-7028b1a449db",
+          "appName": "讯飞输入法",
+          "packageName": "com.iflytek.inputmethod",
+          "categoryName": "工具类",
+          "appType": 4,
+          "appLogo": "http://oss.yxmdm.com/icons/com.iflytek.inputmethod_af082f29-e/app_high_icon.png",
+          "isRecommend": 0,
+          "isDyncAuth": 1,
+          "appAttr": 1,
+          "forceUpdate": 1,
+          "urlAuth": 0,
+          "isTimeUpdate": 0,
+          "timeUpdate": null,
+          "isTimeUnload": 0,
+          "timeUnload": null,
+          "appStatus": 1,
+          "sortIndex": 2999,
+          "description": "",
+          "versionName": "8.0.6442",
+          "versionNo": 64414,
+          "versionSize": 17932017.0,
+          "filePath": "http://47.99.242.59/讯飞输入法教育版.apk",
+          "versionType": null,
+          "useTimeRule": "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+        }
+      ],
+      "success": true
+    }
+    ```
 - 这样，我们就可以拿到小鹿爱学的安装包了
 
 ## 附：老师来检查了怎么办
